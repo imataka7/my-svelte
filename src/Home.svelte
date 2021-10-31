@@ -1,10 +1,10 @@
 <script>
-  import { link } from 'svelte-spa-router';
+  import { Link } from 'svelte-routing';
 	export let name = 'HOST3';
 </script>
 
 <h1>Hello {name}!</h1>
-<a href="/about" use:link>About</a>
+<Link to="about">About</Link>
 <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 
 <style>

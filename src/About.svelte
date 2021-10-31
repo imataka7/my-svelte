@@ -1,9 +1,9 @@
 <script>
-  import { link } from 'svelte-spa-router';
+  import { Link } from 'svelte-routing';
 </script>
 
-<h1>This is a about page</h1>
-<a href="/" use:link>Home</a>
+<h1>This is a about page!</h1>
+<Link to="/">Home</Link>
 
 <style>
 	h1 {

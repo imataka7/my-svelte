@@ -1,16 +1,14 @@
 <script>
-	import Router from 'svelte-spa-router';
+	import { Router, Route } from 'svelte-routing';
 	import About from './About.svelte';
 	import Home from './Home.svelte';
-
-	const routes = {
-		'/': Home,
-		'/about/': About,
-	};
 </script>
 
 <main>
-	<Router {routes} />
+	<Router>
+		<Route path="/about" component="{About}" />
+		<Route path="/" component="{Home}" />
+	</Router>
 </main>
 
 <style>
